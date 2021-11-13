@@ -49,7 +49,7 @@ const PlaceOrderModal = ({ order, handleOrderClose, product, setOrderSuccess }) 
             productName: title
         }
         // server to the server
-        fetch(`https://gentle-wave-42472.herokuapp.com/products`, {
+        fetch(`http://localhost:5000/products`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

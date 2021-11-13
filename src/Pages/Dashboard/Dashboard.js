@@ -26,7 +26,7 @@ import Payment from '../Payment/Payment';
 import useAuth from '../../hooks/useAuth';
 import AdminRoute from '../Login/AdminRoute/AdminRoute';
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 function Dashboard(props) {
     const { window } = props;

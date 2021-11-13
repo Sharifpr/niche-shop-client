@@ -6,23 +6,28 @@ const MyOrder = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://gentle-wave-42472.herokuapp.com/myOrder/${user?.email}`)
+        fetch(`http://localhost:5000/myOrder/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setMyOrders(data));
     }, [user?.email]);
 
     const handleCancel = (_id) => {
-        fetch(`https://gentle-wave-42472.herokuapp.com/delete/${_id}`, {
+        fetch(`http://localhost:5000/delete/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
             .then((data) => {
-                if (data.deletedCount === 1) {
-                    const remainingOrders = myOrders.filter((order) => order._id !== _id);
-                    setMyOrders(remainingOrders);
-                    alert("Want to delete?");
-                } else {
-                    alert("Something is wrong");
+                // 
+                const proceed = window.confirm(
+                    "Are you sure you want to delete?"
+                );
+                if (proceed) {
+                    if (data.deletedCount === 1) {
+                        const remainingOrders = myOrders.filter(
+                            (order) => order._id !== _id
+                        );
+                        setMyOrders(remainingOrders);
+                    }
                 }
             });
     };
@@ -36,6 +41,7 @@ const MyOrder = () => {
                         <th scope="col">Name</th>
 
                         <th scope="col">Address</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Cancel</th>
                     </tr>
                 </thead>
@@ -48,10 +54,11 @@ const MyOrder = () => {
                                 <td>{order?.product}</td>
                                 <td>{order?.user}</td>
                                 <td>{order?.address}</td>
+                                <td>{order?.status}</td>
                                 <td>
                                     <button
                                         onClick={() => handleCancel(order?._id)}
-                                        className="btn btn-warning"
+                                        className="btn btn-primary"
                                     >
                                         Cancel
                                     </button>

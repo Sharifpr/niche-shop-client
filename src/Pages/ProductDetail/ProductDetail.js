@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
 
     useEffect(() => {
-        const url = `https://gentle-wave-42472.herokuapp.com/product/${_id}`;
+        const url = `http://localhost:5000/product/${_id}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setProducts(data));
@@ -33,7 +33,8 @@ const ProductDetail = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch(`https://gentle-wave-42472.herokuapp.com/shipment/${_id}`, {
+        data.status = "Pending";
+        fetch(`http://localhost:5000/shipment/${_id}`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

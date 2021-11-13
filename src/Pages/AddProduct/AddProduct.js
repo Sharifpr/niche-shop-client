@@ -10,7 +10,7 @@ const AddProduct = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch("https://gentle-wave-42472.herokuapp.com/addproduct", {
+        fetch("http://localhost:5000/addproduct", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -56,7 +56,7 @@ const AddProduct = () => {
                         <input
                             type="submit"
                             value="Add A Product"
-                            className="btn btn-warning d-block m-auto px-3 rounded-2"
+                            className="btn btn-primary d-block m-auto px-3 rounded-2"
                         />
                     </p>
                 </form>

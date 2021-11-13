@@ -5,7 +5,7 @@ import './review.css';
 const Review = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch("https://gentle-wave-42472.herokuapp.com/reviews")
+        fetch("http://localhost:5000/reviews")
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);
@@ -14,7 +14,7 @@ const Review = () => {
 
     return (
         <div className="container">
-            <h3 className="text-center my-5">Customers <span className="text-warning">FeedBack</span></h3>
+            <h3 className="text-center">Customers <span className="text-warning">FeedBack</span></h3>
             <div className="review-container">
                 {reviews.map((review) => (
                     <SingleReview
