@@ -19,7 +19,6 @@ import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import Navigation from './Pages/Home/Home/Shared/Navigation/Navigation';
 import Payment from './Pages/Payment/Payment';
 import Dashboard from './Pages/Dashboard/Dashboard'
-import Footer from './Pages/Home/Home/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -68,7 +67,7 @@ function App() {
             <Register></Register>
           </Route>
         </Switch>
-        <Footer></Footer>
+
       </Router>
     </AuthProvider>
 

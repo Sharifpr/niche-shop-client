@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
+import Footer from "../Home/Home/Shared/Footer/Footer";
 
 const ProductDetail = () => {
 
@@ -122,6 +123,7 @@ const ProductDetail = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

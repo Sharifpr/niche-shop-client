@@ -24,7 +24,7 @@ const Product = (props) => {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" style={{ color: "#8e44ad" }}>
-                            {name}
+                            {name.slice(0, 35)}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
                             {description}
