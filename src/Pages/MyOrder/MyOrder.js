@@ -6,13 +6,13 @@ const MyOrder = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${user?.email}`)
+        fetch(`https://gentle-wave-42472.herokuapp.com/myOrder/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setMyOrders(data));
     }, [user?.email]);
 
     const handleCancel = (_id) => {
-        fetch(`http://localhost:5000/delete/${_id}`, {
+        fetch(`https://gentle-wave-42472.herokuapp.com/delete/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

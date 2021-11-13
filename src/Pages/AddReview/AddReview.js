@@ -12,7 +12,7 @@ const AddReview = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/reviews", {
+        fetch("https://gentle-wave-42472.herokuapp.com/reviews", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

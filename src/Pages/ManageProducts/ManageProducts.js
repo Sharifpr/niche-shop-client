@@ -4,13 +4,13 @@ const ManageProducts = () => {
     const [manageProducts, setManageProducts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product`)
+        fetch(`https://gentle-wave-42472.herokuapp.com/product`)
             .then((res) => res.json())
             .then((data) => setManageProducts(data));
     }, []);
 
     const handleCancel = (_id) => {
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`https://gentle-wave-42472.herokuapp.com/product/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

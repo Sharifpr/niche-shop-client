@@ -6,13 +6,13 @@ const ManageAllOrders = () => {
     const [status, setStatus] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://gentle-wave-42472.herokuapp.com/orders`)
             .then((res) => res.json())
             .then((data) => setMyOrders(data));
     }, []);
 
     const handleCancel = (_id) => {
-        fetch(`http://localhost:5000/delete/${_id}`, {
+        fetch(`https://gentle-wave-42472.herokuapp.com/delete/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
@@ -32,7 +32,7 @@ const ManageAllOrders = () => {
     };
     console.log(status);
     useEffect(() => {
-        fetch("http://localhost:5000/orders")
+        fetch("https://gentle-wave-42472.herokuapp.com/orders")
             .then((res) => res.json())
             .then((data) => setMyOrders(data));
     }, []);
@@ -40,7 +40,7 @@ const ManageAllOrders = () => {
 
     // const status = "apporved";
     const handleUpdate = (id) => {
-        fetch(`http://localhost:5000/updateStatus/${id}`, {
+        fetch(`https://gentle-wave-42472.herokuapp.com/updateStatus/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
