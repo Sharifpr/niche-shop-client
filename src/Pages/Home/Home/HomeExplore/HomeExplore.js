@@ -17,7 +17,7 @@ const HomeExplore = () => {
         <Box sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography sx={{ fontWeight: 500, m: 5 }} variant="h5" style={{ textAlign: "center", fontSize: "30px", fontWeight: "500px" }} component="div">
-                    Our <span style={{ color: "#f1c40f" }}>Bast Selling</span> Products
+                    Our <span style={{ color: "#f1c40f" }}>Best Selling</span> Products
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
