@@ -28,7 +28,7 @@ const ManageProducts = () => {
     };
     return (
         <div className="text-center">
-            <table className="table container table-hover table-stripe">
+            <table className="table container table-hover table-stripe shadow">
                 <thead className="mx-auto">
                     <tr>
                         <th scope="col">Product</th>

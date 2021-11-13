@@ -6,7 +6,7 @@ const SingleReview = (props) => {
     const { user, email, review, stars } = props.review;
     return (
         <div>
-            <div className="card text-center review" style={{ color: "#3498db", lineHeight: "20px" }}>
+            <div className="card text-center review shadow py-2" style={{ color: "#3498db", lineHeight: "20px" }}>
                 <h5>{user}</h5>
                 <div className="card-body">
                     <h5 className="card-title">{email}</h5>

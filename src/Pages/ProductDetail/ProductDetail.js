@@ -56,11 +56,11 @@ const ProductDetail = () => {
 
     return (
         <div>
-            <div className="container overflow-hidden">
+            <div className="container overflow-hidden ">
                 <div className="row gx-5">
                     <div className="col-lg-6">
                         <div className="p-3">
-                            <div className="card mb-3">
+                            <div className="card mb-3 shadow">
                                 <img src={product?.img} height="380px" className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{product?.name}</h5>
@@ -73,9 +73,9 @@ const ProductDetail = () => {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="p-3">
+                        <div className="p-3 ">
                             <h3 className="text-center">Place Order</h3>
-                            <form onSubmit={handleSubmit(onSubmit)} className="placeOrder-container">
+                            <form onSubmit={handleSubmit(onSubmit)} className="placeOrder-container ">
                                 <input
                                     className="p-2 px-4 m-2"
                                     placeholder="Enter your name"
