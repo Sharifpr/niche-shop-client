@@ -1,0 +1,62 @@
+[
+    {
+        "img": "https://i.ibb.co/Kr1PrMh/acer-aspire-3-01-228x228.jpg",
+        "name": "Avita Magus Celeron N3350 12.2inch FHD Laptop Grey",
+        "description": "Avita",
+        "price": 65000
+    },
+    {
+        "img": "https://i.ibb.co/j3BPTQK/3505-103-228x228.jpg",
+        "name": "Avita Magus  N3350 12.2inch FHD Laptop Steel Blue",
+        "description": "Avita",
+        "price": 45000
+    },
+    {
+        "img": "https://i.ibb.co/mv9GkB1/extensa-ex215-1-228x228.jpg",
+        "name": "Chuwi HeroBook Pro+ intel Celeron 13.3inch 3K Laptop",
+        "description": "Chuwi",
+        "price": 36000
+    },
+    {
+        "img": "https://i.ibb.co/wdh0JS2/megus-07-228x228.jpg",
+        "name": "Acer Extensa 15 EX215-22-A789 AMD Athlon 3020E 15.6inch HD Laptop",
+        "description": "Acer",
+        "price": 50000
+    },
+    {
+        "img": "https://i.ibb.co/NK22rKp/magus-laptop-charcoal-grey-228x228.jpg",
+        "name": "HP 15s-du1087TU Intel Celeron N4020 15.6 inch FHD Laptop with Win 10",
+        "description": "HP",
+        "price": 102000
+    },
+    {
+        "img": "https://i.ibb.co/jzX3nkZ/hp-15s-du1088tu-228x228.jpg",
+        "name": "Acer Aspire 3 A315-23 AMD Athlon Silver 3050U 15.6''HD Laptop",
+        "description": "Acer",
+        "price": 100000
+    },
+    {
+        "img": "https://i.ibb.co/540tnHr/hp-15s-00010-228x228.jpg",
+        "name": "HP 15s-du1114TU Celeron N4020 15.6inch HD Laptop",
+        "description": "HP",
+        "price": 98000
+    },
+    {
+        "img": "https://i.ibb.co/VNrkPQF/herobook-pro-plus-1-228x228.jpg",
+        "name": "HP 15s-du1117TU Pentium Silver N5030 15.6inch",
+        "description": "HP",
+        "price": 85000
+    },
+    {
+        "img": "https://i.ibb.co/mv9GkB1/extensa-ex215-1-228x228.jpg",
+        "name": "Dell Inspiron 15 3505 Athlon Silver 3050U 15.6inch",
+        "description": "Dell",
+        "price": 78000
+    },
+    {
+        "img": "https://i.ibb.co/K0LzFRz/expertbook-br1100fk-001-228x228.jpg",
+        "name": "Asus ExpertBook BR1100FK Celeron N4500 11.6inch HD Touch Laptop",
+        "description": "Asus",
+        "price": 96000
+    }
+]
