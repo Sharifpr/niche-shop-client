@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import Footer from "../Home/Home/Shared/Footer/Footer";
+import './productDetail.css'
 
 const ProductDetail = () => {
 
@@ -49,10 +50,7 @@ const ProductDetail = () => {
         reset();
     };
 
-    console.log(products.length);
-
     const product = products[0];
-
 
 
     return (
@@ -62,7 +60,7 @@ const ProductDetail = () => {
                     <div className="col-lg-6">
                         <div className="p-3">
                             <div className="card mb-3">
-                                <img src={product?.img} height="80%" className="card-img-top" alt="..." />
+                                <img src={product?.img} height="380px" className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{product?.name}</h5>
                                     <p className="card-text">{product?.description}</p>
@@ -75,35 +73,34 @@ const ProductDetail = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="p-3">
-                            <h3>Place Order Form</h3>
-                            <form onSubmit={handleSubmit(onSubmit)}>
-                                {/* register your input into the hook by invoking the "register" function */}
+                            <h3 className="text-center">Place Order</h3>
+                            <form onSubmit={handleSubmit(onSubmit)} className="placeOrder-container">
                                 <input
                                     className="p-2 px-4 m-2"
                                     placeholder="Enter your name"
                                     defaultValue={user?.displayName}
                                     {...register("user", { required: true })}
-                                />
+                                /> <br />
                                 <input
                                     className="p-2 px-4 m-2"
                                     placeholder="Enter your email"
                                     defaultValue={user?.email}
                                     {...register("email", { required: true })}
-                                />
+                                /> <br />
                                 <input
                                     className="p-2 px-4 m-2"
                                     type="text"
                                     placeholder="Enter your address"
                                     {...register("address", { required: true })}
                                     required
-                                />
+                                /> <br />
                                 <input
                                     className="p-2 px-4 m-2"
                                     type="text"
                                     placeholder="phone number"
                                     {...register("phone", { required: true })}
                                     required
-                                />
+                                /> <br />
                                 <input
                                     className="p-2 px-4 m-2"
                                     placeholder="Enter product Name"
@@ -124,7 +121,7 @@ const ProductDetail = () => {
                 </div>
             </div>
             <Footer></Footer>
-        </div>
+        </div >
     );
 };
 

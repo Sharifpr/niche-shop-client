@@ -1,0 +1,9 @@
+.placeOrder-container input{
+    border: '1px solid gray';
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.placeOrder-container{
+    text-align: center;
+}

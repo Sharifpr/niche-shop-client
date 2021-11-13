@@ -18,8 +18,8 @@ const Products = () => {
     return (
         <Box sx={{ flexGrow: 1 }} >
             <Container>
-                <Typography sx={{ fontWeight: 500, m: 5 }} variant="h5" style={{ textAlign: "center" }} component="div">
-                    Our Bast Products
+                <Typography sx={{ fontWeight: 500, m: 5, fontSize: "30px" }} variant="h5" style={{ textAlign: "center", color: "#9b59b6" }} component="div">
+                    OUR BEST PRODUCTS
                 </Typography>
 
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{ marginBottom: "20px" }}>

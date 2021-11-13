@@ -30,25 +30,25 @@ const AddProduct = () => {
                     <input
                         {...register("name")}
                         placeholder="Name"
-                        className="p-2 my-1 w-100"
+                        className="p-2 my-1 w-100 rounded-2"
                     />
                     <br />
                     <input
                         {...register("price")}
                         placeholder="Price"
-                        className="p-2 my-1 w-100"
+                        className="p-2 my-1 w-100 rounded-2"
                     />
                     <br />
                     <input
                         {...register("description")}
                         placeholder="Description"
-                        className="p-2 my-1 w-100"
+                        className="p-2 my-1 w-100 rounded-2"
                     />
                     <br />
                     <input
                         {...register("img", { required: true })}
                         placeholder="Image Link"
-                        className="p-2 my-1 w-100"
+                        className="p-2 my-1 w-100 rounded-2"
                     />
                     {errors.exampleRequired && <span>This field is required</span>}
 
@@ -56,7 +56,7 @@ const AddProduct = () => {
                         <input
                             type="submit"
                             value="Add A Product"
-                            className="btn btn-warning d-block m-auto px-3"
+                            className="btn btn-warning d-block m-auto px-3 rounded-2"
                         />
                     </p>
                 </form>
